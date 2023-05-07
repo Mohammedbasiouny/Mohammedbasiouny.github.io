@@ -1,0 +1,448 @@
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-size: 1em;
+  }
+  
+  body{
+    background-color: #f1f1f1;
+  }
+  
+/*Header style*/
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+  }
+  
+  /*Logo**/
+  header .logo{
+    margin-right: auto;
+  }
+
+  header .logo img {
+    max-height: 50px;
+  }
+  
+  /*Search*/
+  header .search {
+    margin: auto;
+  }
+
+  header .search input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #F1F1F1;
+  }
+
+  header .search button[type="submit"] {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: #0093d0;
+    color: white;
+  }
+
+  /*Navigator*/
+  .header-navigation {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .header-navigation ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0093d0;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header-navigation li {
+    position: relative;
+    margin: 0 10px;
+  }
+  
+  .header-navigation a {
+    color: white;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+  }
+  
+  .header-navigation a:hover {
+    background-color: white;
+    border-color: black;
+    color: #0093d0;
+    transition: 0.7s ease;
+  }
+
+  .header-navigation .browse-jops {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+  }
+  
+  .header-navigation .how-it-work-before {
+    border-radius: 0;
+    border-top-left-radius: 20px;
+  }
+
+  .header-navigation .login {
+    background-color: white;
+    border-color: black;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    color: #0093d0;
+  }
+  
+  .header-navigation .login:hover {
+    background-color: #0093d0;
+    color: white;
+  }
+  
+  .header-navigation .signup {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .header-navigation .logout {
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  /*dropdown-menu*/
+    .header-navigation li:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .header-navigation .dropdown-menu {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        position:absolute;
+        display: none;
+        min-width: max-content;
+        background-color: white;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 20px;
+    }
+    
+    .header-navigation .dropdown-menu li {
+        margin: 0;
+    }
+    .header-navigation .dropdown-menu a {
+        padding: 10px;
+        margin: 5px;  
+        font-size: 0.9em;
+        color: black;  
+    }
+    .header-navigation .dropdown-menu a:hover {
+        color: #0093d0;
+        transition: 0.7s ease;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    }
+
+/* Form */
+  .form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  fieldset {
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 5px 2px rgba(0, 0, 0, 0.1);
+    background-color: white;
+  }
+    
+  legend {
+    font-size: 1.8em;
+    font-weight: 750;
+    margin-bottom: 20px;
+    color: #0093d0;
+
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  .form-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #0093d0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /*Radio buttons*/
+    .radio-buttons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+    }
+    
+    .radio-buttons label {
+      font-weight: 400;
+      color: #555;
+      cursor: pointer;
+    }
+    
+    .radio-buttons input[type="radio"] {
+      margin-right: 0.5rem;
+      appearance: none;
+      width: 1em;
+      height: 1em;
+      border: 2px solid #555;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    
+    .radio-buttons input[type="radio"]:checked {
+      border-color: #0093d0;
+      background-color: #0093d0;
+    }
+
+  /*Date*/
+    .dob {
+      font-size: 1.1rem;
+      padding: 0.5rem 0.75rem;
+      border: 2px solid #ccc;
+      border-radius: 0.5rem;
+      color: #333;
+      transition: border-color 0.2s ease-in-out;
+    }
+    
+    .dob:focus {
+      outline: none;
+      border-color: #0093d0;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+
+  /*Check box*/
+    .checkbox-label {
+      display: inline-block;
+      position: relative;
+      padding-left: 25px; /* add space for the custom checkbox */
+      margin-right: 15px;
+      cursor: pointer;
+    }
+    
+    .checkbox-label:before {
+      content: "";
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      margin-right: 10px;
+      position: absolute;
+      left: 0;
+      bottom: 1px;
+      background-color: #fff;
+      border: 2px solid #ccc;
+    }
+    
+    .checkbox-input[type="checkbox"] {
+      display: none; /* hide the default checkbox */
+    }
+
+    .checkbox-input[type="checkbox"]:checked + label:before {
+      content: "\2713";
+      text-align: center;
+      font-size: 16px;
+      line-height: 18px;
+      background-color: #0093d0;
+      color: #fff;
+      border-color: #0093d0;
+    }
+
+  /*Sign up form*/
+    .signup-form {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .signup-box {
+      padding: 10px;
+      border-radius: 10px;
+      border: 3px solid #ccc;
+      margin: 10px;
+      max-width: 50%;
+    }
+
+    .signup-box:hover{
+      background-color: #F1F1F1;
+      border-color: #0093d0;
+      transition: 0.7s ease;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    }
+
+    .radio-content {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+    }
+    
+    .signup-input[type="radio"] {
+      appearance: none;
+      width: 1.5em;
+      height: 1.5em;
+      border: 2px solid #555;
+      border-radius: 100%;
+      cursor: pointer;
+    }
+    
+    .signup-input[type="radio"]:checked {
+      border-color: #0093d0;
+      background-color: #0093d0;
+    }
+    .radio-text {
+      font-weight: bold;
+      padding: 10px;
+    }
+
+  /*Submit*/
+    .btn {
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 20px;
+      padding: 8px 12px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: black;
+    }
+    
+    .btn-primary {
+      background-color: #0093d0;
+      color: #fff;
+      border-color: #0093d0;
+    }
+    
+    .btn-primary:hover {
+      background-color: #0069d9;
+    }
+    .form-btn-row {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+  /* footer section CSS */
+  footer {
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .footer-links a {
+    color: #666;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: #333;
+  }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .header .logo {
+    margin-bottom: 10px;
+  }
+  
+  .header-navigation {
+    margin-top: 10px;
+  }
+  
+  .header-navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header-navigation li {
+    margin-bottom: 5px;
+  }
+  
+  .header-navigation a {
+    padding: 5px;
+  }
+
+  .hero {
+    height: 300px;
+    padding: 20px;
+  }
+  
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .hero p {
+    font-size: 1em;
+  }
+  
+  .btn {
+    font-size: 0.8em;
+    padding: 10px 20px;
+  }
+
+}

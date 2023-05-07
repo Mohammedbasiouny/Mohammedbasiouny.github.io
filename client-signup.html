@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <!--Logo-->
+      <div class="logo">
+        <a href="index.html">
+          <img src="image/Logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <!--Navigator-->
+      <nav class="header-navigation">
+        <ul>
+          <li>
+            <a href="how-it-work.html" class="how-it-work-before"
+              >How it works</a
+            >
+          </li>
+          <li><a href="login.html" class="login">Log in</a></li>
+          <li><a href="signup.html" class="signup">Sign up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="form">
+      <form action="client-signup.php" method="post">
+        <fieldset>
+          <legend>Sign up to hire talent</legend>
+
+          <div class="form-group">
+            <label for="id" class="form-label">ID</label>
+            <input
+              type="text"
+              class="form-input"
+              id="id"
+              name="id"
+              placeholder="Enter your ID"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="name" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-input"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email address</label>
+            <input
+              type="email"
+              class="form-input"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-input"
+              id="password"
+              name="password"
+              placeholder="Enter password"
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&]).{8,}"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password" class="form-label"
+              >Confirm Password:</label
+            >
+            <input
+              type="password"
+              class="form-input"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="gender" class="form-label">Gender:</label>
+            <div class="form-input radio-buttons" id="gender">
+              <label
+                ><input type="radio" name="gender" value="male" /> Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="female" />
+                Female</label
+              >
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dob" class="form-label">Date of Birth:</label>
+            <input class="dob" type="date" id="dob" name="dob" />
+          </div>
+
+          <div class="form-group">
+            <label for="country" class="form-label">Country:</label>
+            <select class="form-input drop-down" id="country" name="country">
+              <option value="">-- Select a country --</option>
+              <option value="eg">Egypt</option>
+              <option value="us">United States</option>
+              <option value="ca">Canada</option>
+              <option value="uk">United Kingdom</option>
+            </select>
+          </div>
+
+          <div class="form-group form-btn-row">
+            <button type="submit" class="btn btn-primary">Register</button>
+            <button type="reset" class="btn">Clear</button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+    <script>
+      const password = document.getElementById("password");
+      const confirm_password = document.getElementById("confirm-password");
+
+      function validatePassword() {
+        if (password.value != confirm_password.value) {
+          confirm_password.setCustomValidity("Passwords do not match.");
+        } else {
+          confirm_password.setCustomValidity("");
+        }
+      }
+
+      password.addEventListener("change", validatePassword);
+      confirm_password.addEventListener("keyup", validatePassword);
+    </script>
+    <footer>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="how-it-work.html">How it works</a>
+      </div>
+      <p>© 2023 Freelance System. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
