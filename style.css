@@ -287,7 +287,6 @@ footer {
     color: black;
     background-color: white;
     align-items: center;
-
 }
 
 .footer-title {
@@ -327,30 +326,25 @@ footer .facebook {
 
 footer .linkedin:hover {
     background-color: #0e76a8;
-    color: white
+    color: white;
 }
 
 footer .twitter:hover {
     background-color: #00acee;
-    color: white
+    color: white;
 }
 
 footer .instagram:hover {
     background-color: #E4405F;
-    color: white
+    color: white;
 }
 
 footer .facebook:hover {
     background-color: #3b5998;
-    color: white
+    color: white;
 }
 
 @media (max-width:1100px) {
-
-    * {
-        font-size: 20;
-    }
-
     header {
         margin: 0;
         border: 0;
@@ -364,7 +358,6 @@ footer .facebook:hover {
         padding: 0;
         min-height: 40vh;
         background-attachment: scroll;
-
     }
 
     main,
@@ -375,10 +368,7 @@ footer .facebook:hover {
     }
 }
 
-@media(max-width:900px) {}
-
 @media (max-width:700px) {
-
     header {
         font-size: 50%;
         padding: 10px 20px;
@@ -441,14 +431,13 @@ footer .facebook:hover {
         padding: 0;
         padding-top: 20px;
         padding-bottom: 50px;
-
     }
 
     .card {
         font-size: 80%;
         width: 21.25em;
         padding: 5px;
-        margin: 5px;
+        margin: 10px;
         border: 5px;
     }
 
