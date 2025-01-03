@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    color: #3a6cf4;
+    font-weight: 700;
+}
+
+header .logo i {
+    font-size: 2em;
+}
+
+header .logo span {
+    font-size: 1.8em;
+    padding: 0.2em;
+}
+
+header .navigation a {
+    color: #3a6cf4;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 10px;
+}
+
+header .logo:hover,
+header .navigation a:hover {
+    color: #0000FF;
+}
+
+main {
+    padding: 50px 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-size: 100%;
+    background-image: url(image/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+main div {
+    padding-top: 50px;
+}
+
+main h2 {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 500;
+}
+
+main h2 span {
+    display: inline-block;
+    color: #0000FF;
+    font-size: 2em;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    background-color: #0000FF;
+    color: white;
+    font-size: 1.1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 30px;
+    transition: 0.7s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 255, 0.3);
+}
+
+.main-btn:hover {
+    background-color: white;
+    color: #0000FF;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 255, 0.5);
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.8em;
+    padding-right: 30px;
+}
+
+.linkedin:hover {
+    color: #0072b1;
+}
+
+.twitter:hover {
+    color: #00acee;
+}
+
+.instagram:hover {
+    color: #E4405F;
+}
+
+.facebook:hover {
+    color: #3b5998;
+}
+
+.title {
+    color: #3a6cf4;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: 800;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.content {
+    padding: 100px;
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.projects {
+    background-image: url(image/design.jpg);
+}
+
+.projects .title {
+    color: white;
+}
+
+.projects .content,
+.certificate .content {
+    margin-top: 30px;
+}
+
+.project-card,
+.certificate-card {
+    background-color: white;
+    border: 1px solid white;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover,
+.certificate-card:hover {
+    transform: scale(1.1);
+}
+
+.project-image img,
+.certificate-image img {
+    width: 100%;
+    height: 100%;
+}
+
+.project-card .project-image:hover,
+.certificate-card .certificate-image:hover {
+    opacity: 0.9;
+}
+
+.project-info,
+.certificate-info {
+    padding: 1em;
+}
+
+.project-category,
+.certificate-category {
+    font-size: 0.8em;
+    color: black;
+}
+
+.project-title,
+.certificate-title {
+    font-weight: 800;
+    margin-top: 10px;
+    color: #3a6cf4;
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.more-details {
+    color: #3a6cf4;
+}
+
+.more-details:hover {
+    color: black;
+}
+
+.contact {
+    background-image: url(image/design.jpg);
+}
+
+.contact .title {
+    color: white;
+}
+
+.contact .icon {
+    font-size: 5em;
+}
+
+.contact h3 {
+    color: #3a6cf4;
+    font-size: 1.8em;
+}
+
+.contact p {
+    font-weight: 500;
+}
+
+.phone {
+    letter-spacing: 1px;
+}
+
+footer {
+    padding: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    background-color: white;
+    align-items: center;
+
+}
+
+.footer-title {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #3a6cf4;
+    font-style: normal;
+    font-weight: 900;
+}
+
+footer .social-icons a {
+    border: 0.1em;
+    border-radius: 1em;
+    padding: 0.4em;
+    padding-right: 0.5em;
+    font-size: 2em;
+}
+
+footer .linkedin {
+    color: #0e76a8;
+}
+
+footer .twitter {
+    color: #00acee;
+}
+
+footer .instagram {
+    color: #E4405F;
+}
+
+footer .facebook {
+    color: #3b5998;
+}
+
+footer .linkedin:hover {
+    background-color: #0e76a8;
+    color: white
+}
+
+footer .twitter:hover {
+    background-color: #00acee;
+    color: white
+}
+
+footer .instagram:hover {
+    background-color: #E4405F;
+    color: white
+}
+
+footer .facebook:hover {
+    background-color: #3b5998;
+    color: white
+}
+
+@media (max-width:1100px) {
+
+    * {
+        font-size: 20;
+    }
+
+    header {
+        margin: 0;
+        border: 0;
+        padding: 10px 50px;
+    }
+
+    main {
+        font-size: 80%;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        min-height: 40vh;
+        background-attachment: scroll;
+
+    }
+
+    main,
+    section {
+        margin: 0;
+        border: 0;
+        padding: 20px;
+    }
+}
+
+@media(max-width:900px) {}
+
+@media (max-width:700px) {
+
+    header {
+        font-size: 50%;
+        padding: 10px 20px;
+        margin: 0;
+        border: 0;
+    }
+
+    header .navigation a {
+        padding-left: 5px;
+    }
+
+    main {
+        font-size: 40%;
+        min-height: 34vh;
+        display: flex;
+        align-items: center;
+        background-size: contain;
+        background-attachment: scroll;
+        margin: 0;
+        border: 0;
+        padding: 10px;
+    }
+
+    main div {
+        padding-top: 10px;
+    }
+
+    main h2 span {
+        margin-top: 5px;
+    }
+
+    main h3 {
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
+
+    .main-btn {
+        padding: 0.9375em 2.1875em;
+        border-bottom: 5em;
+    }
+
+    .social-icons a {
+        font-size: 1.8em;
+        padding-right: 15px;
+        border-top: 500px;
+    }
+
+    section {
+        padding: 5;
+    }
+
+    .title {
+        font-size: 2em;
+        padding: 0;
+        padding: auto;
+        padding-top: 50px;
+    }
+
+    .content {
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 50px;
+
+    }
+
+    .card {
+        font-size: 80%;
+        width: 21.25em;
+        padding: 5px;
+        margin: 5px;
+        border: 5px;
+    }
+
+    .icon {
+        font-size: 6em;
+    }
+
+    .info h3 {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    footer {
+        font-size: 40%;
+        padding: 0.5em;
+    }
+}
