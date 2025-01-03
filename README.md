@@ -27,4 +27,4 @@ Feel free to reach out to me via [LinkedIn](https://www.linkedin.com/in/mohamedb
 
 ## Demo
 
-[![Demo](https://mohammedbasiouny.github.io)]
+[Demo](https://mohammedbasiouny.github.io)
